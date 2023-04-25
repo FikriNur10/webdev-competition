@@ -1,7 +1,3 @@
-/* Font Details */
-/* Font name : Josefin Sans */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
-
 /* membuat background hijau transparan */
 * {
     padding: 0;
@@ -371,77 +367,103 @@ body {
 
       .card {
         position: relative;
-        width: 220px;
-        height: 320px;
-        background: mediumturquoise;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px;
+        width: 320px;
+        height: 300px;
+        color: #2e2d31;
+        background-repeat: no-repeat;
+        background-size: 320px 300px;
+        overflow: hidden;
+        border-radius: 20px;
+        align-items: center; /*agar card menjadi ditengah pada sumbu X*/
+        margin: 0 auto; /*agar card menjadi ditengah pada sumbu Y*/
+        padding: 20px;
+        text-align: center;
+      }
+      .card-trash {
+        background-image: url("img/trash.jpg");
+      }
+      .card-tree{
+        background-image: url("img/tree.png");
+      }
+      .card-energy{
+        background-image: url("img/energy.jpg");
+        background-size: 340px 300px;
+      }
+      .temporary_text {
         font-weight: bold;
-        border-radius: 15px;
-        cursor: pointer;
-        margin: 0 10px;
+        font-size: 24px;
+        padding: 6px 12px;
+        color: #f8f8f8;
       }
       
-      @media only screen and (max-width: 768px) {
-        .card {
-          width: 150px;
-          height: 250px;
-          font-size: 20px;
-        }
+      .card_title {
+        font-weight: bold;
       }
       
-      @media only screen and (max-width: 480px) {
-        .card {
-          width: 120px;
-          height: 200px;
-          font-size: 15px;
-        }
-      }
-      
-      .card::before,
-      .card::after {
+      .card_content {
         position: absolute;
-        content: "";
-        width: 20%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px;
-        font-weight: bold;
-        background-color: lightblue;
-        transition: all 5s;
-      }
-      
-      .card::before {
-        top: 0;
-        right: 0;
-        border-radius: 0 15px 0 100%;
-      }
-      
-      .card::after {
-        bottom: 0;
         left: 0;
-        border-radius: 0 100% 0 15px;
-      }
-      
-      .card:hover::before,
-      .card:hover:after {
+        bottom: 0;
+          /* edit the width to fit card */
         width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        transition: all 1s;
+        padding: 20px;
+        background:  #00bf6f;
+        border-top-left-radius: 20px;
+          /* edit here to change the height of the content box */
+        transform: translateY(150px);
+        transition: transform 1s;
       }
       
-      .card:hover:after {
-        content: "HELLO";
+      .card_content::before {
+        content: '';
+        position: absolute;
+        top: -47px;
+        right: -45px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-175deg);
+        border-radius: 50%;
+        box-shadow: inset 48px 48px  #00bf6f;
       }
       
-      .card-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 200px;
+      .card_title {
+        color: #131313;
+        line-height: 15px;
       }
+      
+      .card_subtitle {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      
+      .card_description {
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+      }
+      
+      .card:hover .card_content {
+        transform: translateY(0);
+      }
+      
+      .card:hover .card_description {
+        opacity: 1;
+        transition-delay: .25s;
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
