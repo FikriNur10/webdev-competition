@@ -15,9 +15,9 @@
         <h1>Earth Campaign</h1>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Campaigns</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
         </ul>
     </nav>
     <main>
@@ -61,18 +61,31 @@
                     </p>
             </div>
         </div>
-        <section class="about">
+        <section class="about" id="about">
             <div class="text-container">
-                <h2>About Earth Campaign</h2>
-                <p>Earth Campaign is a movement dedicated to saving the planet and creating a sustainable future. Our
-                    mission is to inspire and empower people around the world to take action and make a positive impact
-                    on the environment.</p>
-                <a href="#" class="btn">Learn More</a>
+                <h2>Tentang Kami</h2>
+                <p>Earth Campaign adalah sebuah gerakan yang didedikasikan untuk menyelamatkan planet ini dan menciptakan masa depan yang berkelanjutan. </p>
+                <h2>Visi</h2>
+                <p>Visi kami adalah menjadikan bumi pertiwi yang lestari dengan tindakan kecil. </p>
+                <h2>Misi</h2>
+                <p>Misi kami adalah menginspirasi dan memberdayakan orang-orang di seluruh dunia untuk mengambil tindakan dan memberikan dampak positif terhadap lingkungan. </p>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Earth Campaign. All Rights Reserved.</p>
+        <div class="grid-container">
+            <h3>Hubungi Kami</h3>
+            <form action="/send-email" method="post">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" required><br>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required><br>
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <button type="submit">Kirim</button>
+            </form>
+        </div>
+        <div class="copyright">&copy; 2023 Earth Campaign. All Rights Reserved.</div>
     </footer>
 </body>
 
