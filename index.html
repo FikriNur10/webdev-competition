@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth Campaign</title>
+    <title>Earth Campaigns</title>
     <!-- Link -->
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -13,6 +13,7 @@
 <body>
     <nav class="nav-bar">
         <h1>Earth Campaign</h1>
+<<<<<<< HEAD
         <nav class="nav-bar-content">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -37,17 +38,88 @@
             </div>
         </section>
         <section class="about">
+=======
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="banner">
+            <h2>Save our planet, Save our future</h2>
+        </div>
+        <section class="program" id="program">
+>>>>>>> 30d5263b0872231711df74589f810638113fb8f0
             <div class="text-container">
-                <h2>About Earth Campaign</h2>
-                <p>Earth Campaign is a movement dedicated to saving the planet and creating a sustainable future. Our
-                    mission is to inspire and empower people around the world to take action and make a positive impact
-                    on the environment.</p>
-                <a href="#" class="btn">Learn More</a>
+                <h2>Program kami</h2>
+            </div>
+        </section>
+        <div class="card card-trash">
+            <div class="temporary_text">
+            </div>
+            <div class="card_content">
+                <span class="card_title">Pengurangan Sampah</span>
+                    <span class="card_subtitle">Mengurangi Sampah dan Meningkatkan Manajemen Sampah yang Lebih Efektif.</span>
+                    <p class="card_description">
+                        Pengurangan sampah adalah suatu usaha untuk mengurangi jumlah sampah yang dihasilkan dan meningkatkan manajemen sampah yang lebih efektif. Hal ini dapat dilakukan dengan cara mengurangi penggunaan bahan-bahan yang sulit terurai dan memperbanyak penggunaan bahan daur ulang, serta meningkatkan kesadaran masyarakat dalam membuang sampah dengan benar.
+                    </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card card-tree">
+            <div class="temporary_text">
+            </div>
+            <div class="card_content">
+                <span class="card_title">Penanaman Pohon</span>
+                    <span class="card_subtitle">Menjaga Kualitas Lingkungan dengan Menanam Bibit Pohon.</span>
+                    <p class="card_description">
+                        Penanaman pohon adalah suatu kegiatan yang dilakukan untuk menanam bibit pohon dengan tujuan untuk memperbanyak jumlah pohon dan meningkatkan kualitas lingkungan. Penanaman pohon dapat memberikan manfaat dalam menyediakan oksigen, menyediakan habitat bagi hewan, mengurangi polusi udara, dan mencegah erosi.
+                    </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card card-energy">
+            <div class="temporary_text">
+            </div>
+            <div class="card_content">
+                <span class="card_title">Konservasi Energi</span>
+                    <span class="card_subtitle">Menghemat Penggunaan Energi dan Mengoptimalkan Sumber Energi Terbarukan.</span>
+                    <p class="card_description">
+                        Konservasi energi adalah suatu usaha untuk mengurangi penggunaan energi secara berlebihan dan memanfaatkan energi dengan lebih efisien. Hal ini dapat dilakukan dengan cara menghemat penggunaan listrik, mengoptimalkan pemanfaatan sumber energi terbarukan, dan menggunakan teknologi yang lebih ramah lingkungan.
+                    </p>
+            </div>
+        </div>
+        <section class="about" id="about">
+            <div class="text-container">
+                <h2>Tentang Kami</h2>
+                <p>Earth Campaign adalah sebuah gerakan yang didedikasikan untuk menyelamatkan planet ini dan menciptakan masa depan yang berkelanjutan. </p>
+                <h2>Visi</h2>
+                <p>Visi kami adalah menjadikan bumi pertiwi yang lestari dengan tindakan kecil. </p>
+                <h2>Misi</h2>
+                <p>Misi kami adalah menginspirasi dan memberdayakan orang-orang di seluruh dunia untuk mengambil tindakan dan memberikan dampak positif terhadap lingkungan. </p>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Earth Campaign. All Rights Reserved.</p>
+        <div class="grid-container">
+            <h2>Hubungi Kami</h2>
+            <form action="/send-email" method="post">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" required><br>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required><br>
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <button type="submit">Kirim</button>
+            </form>
+        </div>
+        <br>
+        <div class="copyright">&copy; 2023 Earth Campaign. All Rights Reserved.</div>
+
     </footer>
 </body>
 

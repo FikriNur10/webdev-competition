@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 /* Font Details */
 /* Font name : Josefin Sans */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
 
+=======
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+>>>>>>> 30d5263b0872231711df74589f810638113fb8f0
 /* membuat background hijau transparan */
 * {
   padding: 0;
@@ -10,6 +15,7 @@
 }
 
 body {
+<<<<<<< HEAD
   background-color: #4bb5f1;
   flex-basis: 100%;
 }
@@ -145,6 +151,14 @@ nav .menu-dropdown a:hover {
 
 /* menampilkan menu navigasi pada layar kecil */
 @media screen and (max-width: 768px) {
+=======
+    background-color: rgba(47, 196, 141, 0.2);
+    flex-basis: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* membuat navigasi menempel pada atas dan background hitam transparan */
+>>>>>>> 30d5263b0872231711df74589f810638113fb8f0
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -164,6 +178,7 @@ nav .menu-dropdown a:hover {
   nav .menu-list li {
     margin: 10px 0;
   }
+<<<<<<< HEAD
 
   nav .menu-dropdown {
     display: block;
@@ -412,3 +427,401 @@ footer {
   align-items: center;
   padding-top: 200px;
 }
+=======
+  
+  nav .menu-dropdown a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 10px;
+    border-radius: 5px;
+  }
+  
+  nav .menu-dropdown a:hover {
+    background-color: #00bf6f;
+  }
+  
+  /* menampilkan menu navigasi pada layar kecil */
+  
+  @media screen and (max-width: 859px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav .menu-toggle {
+      display: block;
+    }
+  
+    nav .menu-list {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    nav .menu-list li {
+      margin: 10px 0;
+    }
+  
+    nav .menu-dropdown {
+      display: block;
+    }
+  }
+  
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url(https://unsplash.com/photos/MMJx78V7xS8);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    opacity: 120%
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .banner h2 {
+    font-size: 48px;
+    color: #1fcd85;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 180%;
+  }
+  
+  
+  /* membuat tombol join us */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(64, 159, 198);
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #88c7ef;
+    color: #000;
+  }
+  
+    .program {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .program h2 {
+      font-size: 48px;
+      color: #00bf6f;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    .about {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+    .about h2 {
+    font-size: 48px;
+    color: #00bf6f;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .about p {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    /* membuat footer */
+    footer:not(.copyright) {
+        background-color: #333333;
+        color: #fff;
+        padding: 20px;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        flex-wrap: wrap;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      
+      .footer-logo {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      
+      .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+      }
+      
+      .footer-nav li {
+        margin: 0 10px;
+      }
+      
+      .footer-nav a {
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .footer-nav a:hover {
+        color: #00bf6f;
+      }
+      
+      .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+      }
+      
+      .footer-social li {
+        margin: 0 10px;
+      }
+      
+      .footer-social a {
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .footer-social a:hover {
+        color: #00bf6f;
+      }
+    
+      @media screen and (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        
+        nav li {
+          margin: 10px 0;
+        }
+        
+        .banner {
+          height: 300px;
+        }
+        
+        .banner h2 {
+          font-size: 36px;
+          margin-bottom: 10px;
+        }
+        
+        .about {
+          flex-direction: column;
+          padding: 50px 20px;
+          text-align: center;
+        }
+        
+        .about h2 {
+          font-size: 36px;
+          margin-bottom: 10px;
+        }
+        
+        .text-container {
+          margin-bottom: 30px;
+        }
+      }
+      
+      /* Membuat gambar banner responsif */
+      .banner {
+        background-image: url(img/banner2.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+      }
+      
+      @media screen and (max-width: 576px) {
+        .banner {
+          background-image: url(img/banner3.jpg);
+        }
+      }
+      
+      @media screen and (max-width: 320px) {
+        .banner {
+          background-image: url(img/banner4.jpg);
+        }
+      } 
+
+      .card {
+        position: relative;
+        width: 320px;
+        height: 300px;
+        color: #2e2d31;
+        background-repeat: no-repeat;
+        background-size: 320px 300px;
+        overflow: hidden;
+        border-radius: 20px;
+        align-items: center; /*agar card menjadi ditengah pada sumbu X*/
+        margin: 0 auto; /*agar card menjadi ditengah pada sumbu Y*/
+        padding: 20px;
+        text-align: center;
+      }
+      .card-trash {
+        background-image: url("img/trash.jpg");
+      }
+      .card-tree{
+        background-image: url("img/tree.png");
+      }
+      .card-energy{
+        background-image: url("img/energy.jpg");
+        background-size: 340px 300px;
+      }
+      .temporary_text {
+        font-weight: bold;
+        font-size: 24px;
+        padding: 6px 12px;
+        color: #f8f8f8;
+      }
+      
+      .card_title {
+        font-weight: bold;
+      }
+      
+      .card_content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+          /* edit the width to fit card */
+        width: 100%;
+        padding: 20px;
+        background:  #00bf6f;
+        border-top-left-radius: 20px;
+          /* edit here to change the height of the content box */
+        transform: translateY(150px);
+        transition: transform 1s;
+      }
+      
+      .card_content::before {
+        content: '';
+        position: absolute;
+        top: -47px;
+        right: -45px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-175deg);
+        border-radius: 50%;
+        box-shadow: inset 48px 48px  #00bf6f;
+      }
+      
+      .card_title {
+        color: #131313;
+        line-height: 15px;
+      }
+      
+      .card_subtitle {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      
+      .card_description {
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+      }
+      
+      .card:hover .card_content {
+        transform: translateY(0);
+      }
+      
+      .card:hover .card_description {
+        opacity: 1;
+        transition-delay: .25s;
+      }
+
+
+
+      .grid-container {
+        display: grid;
+        color: white;
+        margin-top: 20px;
+        width: 40%;
+      }
+    
+      .grid-container form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      
+      .grid-container input,
+      .grid-container textarea {
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+      
+      .grid-container button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+      
+      .grid-container button:hover {
+        background-color: #3e8e41;
+      }
+
+      .copyright {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+      }
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+>>>>>>> 30d5263b0872231711df74589f810638113fb8f0
