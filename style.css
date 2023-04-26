@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 /* membuat background hijau transparan */
 * {
     padding: 0;
@@ -8,6 +10,7 @@
 body {
     background-color: rgba(47, 196, 141, 0.2);
     flex-basis: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   /* membuat navigasi menempel pada atas dan background hitam transparan */
@@ -138,7 +141,8 @@ body {
   }
   
   /* menampilkan menu navigasi pada layar kecil */
-  @media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 859px) {
     nav {
       flex-direction: column;
       align-items: flex-start;
@@ -171,11 +175,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 400px;
-    background-image: url(https://images.unsplash.com/photo-1542791184-9848d4e6d80d);
+    background-image: url(https://unsplash.com/photos/MMJx78V7xS8);
     background-size: cover;
     background-position: center;
     position: relative;
     width: 100%;
+    opacity: 120%
   }
   
   .banner::before {
@@ -190,9 +195,11 @@ body {
   
   .banner h2 {
     font-size: 48px;
-    color: #00bf6f;
+    color: #1fcd85;
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 180%;
   }
   
   
@@ -215,41 +222,51 @@ body {
     color: #000;
   }
   
-  
+    .program {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .program h2 {
+      font-size: 48px;
+      color: #00bf6f;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
     .about {
     padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
-    
-    .about img {
-    flex-basis: 40%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    
+  
     .about h2 {
     font-size: 48px;
     color: #00bf6f;
     margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
     .about p {
     font-size: 24px;
     line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
     /* membuat footer */
-    footer {
+    footer:not(.copyright) {
         background-color: #333333;
         color: #fff;
         padding: 20px;
-        display: flex;
+        display: block;
         justify-content: space-between;
         align-items: center;
         font-size: 14px;
         flex-wrap: wrap;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
       
       .footer-logo {
@@ -327,13 +344,6 @@ body {
           text-align: center;
         }
         
-        .about img {
-          margin-bottom: 20px;
-          width: 100%;
-          max-width: 400px;
-          height: auto;
-        }
-        
         .about h2 {
           font-size: 36px;
           margin-bottom: 10px;
@@ -346,7 +356,7 @@ body {
       
       /* Membuat gambar banner responsif */
       .banner {
-        background-image: url(https://images.unsplash.com/photo-1542791184-9848d4e6d80d);
+        background-image: url(img/banner2.jpg);
         background-size: cover;
         background-position: center;
         position: relative;
@@ -355,13 +365,13 @@ body {
       
       @media screen and (max-width: 576px) {
         .banner {
-          background-image: url(https://images.unsplash.com/photo-1542791184-9848d4e6d80d?w=576);
+          background-image: url(img/banner3.jpg);
         }
       }
       
       @media screen and (max-width: 320px) {
         .banner {
-          background-image: url(https://images.unsplash.com/photo-1542791184-9848d4e6d80d?w=320);
+          background-image: url(img/banner4.jpg);
         }
       } 
 
@@ -451,8 +461,50 @@ body {
         opacity: 1;
         transition-delay: .25s;
       }
+
+
+
+      .grid-container {
+        display: grid;
+        color: white;
+        margin-top: 20px;
+        width: 40%;
+      }
+    
+      .grid-container form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
       
+      .grid-container input,
+      .grid-container textarea {
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
       
+      .grid-container button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+      
+      .grid-container button:hover {
+        background-color: #3e8e41;
+      }
+
+      .copyright {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+      }
+      
+    
       
       
       
