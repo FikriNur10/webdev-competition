@@ -2,6 +2,121 @@
 /* Font name : Josefin Sans */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
 
+/* loader css */
+.loader {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #23a5f0;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.75s, visibility 0.75s;
+  overflow: hidden;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+}
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.cs-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.cs-loader-inner {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: calc(100% - 200px);
+  color: #fff;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.cs-loader-inner label {
+  font-size: 20px;
+  opacity: 0;
+  display: inline-block;
+}
+
+@keyframes lol {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes lol {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+}
+
+.cs-loader-inner label:nth-child(6) {
+  -webkit-animation: lol 3s infinite ease-in-out;
+  animation: lol 3s infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(5) {
+  -webkit-animation: lol 3s 100ms infinite ease-in-out;
+  animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(4) {
+  -webkit-animation: lol 3s 200ms infinite ease-in-out;
+  animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(3) {
+  -webkit-animation: lol 3s 300ms infinite ease-in-out;
+  animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(2) {
+  -webkit-animation: lol 3s 400ms infinite ease-in-out;
+  animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(1) {
+  -webkit-animation: lol 3s 500ms infinite ease-in-out;
+  animation: lol 3s 500ms infinite ease-in-out;
+}
+
 /* membuat background hijau transparan */
 * {
   padding: 0;
@@ -16,13 +131,13 @@ body {
 
 /* membuat navigasi menempel pada atas dan background hitam transparan */
 nav {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: none;
   backdrop-filter: blur(5px);
   padding: 10px 10px 10px 50px;
   transition: all 0.3s ease-in-out;
@@ -30,7 +145,6 @@ nav {
 
 nav h1 {
   font-size: 18px;
-  font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -146,7 +260,7 @@ nav .menu-dropdown a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 650px;
+  height: 100vh;
   background-size: cover;
   background-position: top;
   position: relative;

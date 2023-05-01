@@ -1,6 +1,15 @@
 // If web successfully connects
 console.log("Web successfully connects");
 
+// loader
+var loader = document.querySelector(".loader");
+
+window.addEventListener("load", vanish);
+function vanish() {
+  loader.classList.add("loader-hidden");
+}
+
+// smooth scrolling
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
