@@ -24,7 +24,7 @@ nav {
   z-index: 999;
   background-color: none;
   backdrop-filter: blur(5px);
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 50px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -38,7 +38,6 @@ nav h1 {
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  /* flex-basis: 20%; */
 }
 
 nav ul {
@@ -48,8 +47,6 @@ nav ul {
   list-style: none;
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
-  /* background-color: #000; */
-  /* flex-basis: 100%; */
 }
 
 nav li {
@@ -194,7 +191,7 @@ nav .menu-dropdown a:hover {
   font-size: 36px;
   margin-bottom: 10px;
 }
-
+/* about project section css */
 .about-project {
   width: 100%;
   height: 800px;
@@ -212,8 +209,7 @@ nav .menu-dropdown a:hover {
   text-align: justify;
   float: right;
 }
-.about-project .about-project-container:hover {
-}
+
 .about-project .about-project-container h1 {
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
@@ -290,7 +286,7 @@ canvas {
 
 .about-us {
   width: 100%;
-  height: 900px;
+  height: 1000px;
   padding: 100px 80px 100px 80px;
   overflow: hidden; /* Hide scrollbars */
 }
@@ -545,7 +541,6 @@ canvas {
 }
 
 .section-footer .container-footer .footer-content {
-  
   width: 400px;
   height: 200px;
   margin: auto;
@@ -570,36 +565,32 @@ canvas {
   float: right;
   color: white;
 }
-.section-footer .container-footer .footer-content:nth-child(2) ul li{
+.section-footer .container-footer .footer-content:nth-child(2) ul li {
   list-style-type: none;
   height: 20px;
-  padding: 15px 0 15px 0; 
+  padding: 15px 0 15px 0;
 }
-.section-footer .container-footer .footer-content:nth-child(2) ul li a{
+.section-footer .container-footer .footer-content:nth-child(2) ul li a {
   text-decoration: none;
   background-color: none;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
-
 }
-.section-footer .container-footer .footer-content:nth-child(2) ul li a:hover{
- 
+.section-footer .container-footer .footer-content:nth-child(2) ul li a:hover {
   color: #2f2f2f;
 }
-.section-footer .container-footer .footer-content:nth-child(3) ul li{
+.section-footer .container-footer .footer-content:nth-child(3) ul li {
   list-style-type: none;
   height: 20px;
-  padding: 15px 0 15px 0; 
+  padding: 15px 0 15px 0;
 }
-.section-footer .container-footer .footer-content:nth-child(3) ul li a{
+.section-footer .container-footer .footer-content:nth-child(3) ul li a {
   text-decoration: none;
   background-color: none;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
-
 }
-.section-footer .container-footer .footer-content:nth-child(3) ul li a:hover{
- 
+.section-footer .container-footer .footer-content:nth-child(3) ul li a:hover {
   color: #2f2f2f;
 }
 

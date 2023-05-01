@@ -9,7 +9,6 @@ document.querySelectorAll("nav a").forEach((link) => {
   });
 });
 
-
 // make scroll effect from left to right
 const observerleft = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
