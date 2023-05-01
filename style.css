@@ -30,6 +30,7 @@
   height: 100%;
   width: 100%;
   justify-content: center;
+  padding :100px 100px 100px 100px;
 
 }
 
@@ -39,7 +40,6 @@
   position: absolute;
   width: calc(100% - 200px);
   color: #fff;
-  padding: 0 100px;
   text-align: center;
 }
 
@@ -343,7 +343,6 @@ nav .menu-dropdown a:hover {
   width: 50%;
   height: 640px;
   float: right;
-  background-color: #2f2f2f;
   overflow: hidden;
 }
 
